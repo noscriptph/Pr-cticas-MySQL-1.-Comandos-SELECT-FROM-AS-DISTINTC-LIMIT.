@@ -15,7 +15,7 @@ con la que estás trabajando.
 ![imagen](https://github.com/noscriptph/Pr-cticas-MySQL-1.-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/063136e8-1f56-4267-a210-2104bece9bb7)
 
 
-❖ Entramos en la base de datos world”. Utiliza capturas de pantalla.
+❖ Entramos en la base de datos world. Utiliza capturas de pantalla.
 
 • Comprueba la estructura de la tabla country.
 ![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/0d9e91a7-9a7a-41bb-8cd5-4e9a1f9543b1)
@@ -28,7 +28,15 @@ se lecciona la base de datos world y se pide que se muestren sus tablas
 • Realiza una query para recuperar todas las columnas y filas de la de
 la tabla.
 
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/4e395594-a54a-49be-a5ea-6d23f7af1574)
+
+
+seleccion de tabla para poder trabajar en ella
+
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/a6904fee-cbc6-44d6-997d-ef61e26652ab)
+
 • Visualiza los nombres de los países.
+
 • Visualizar el nombre el continente y la población de cada país.
 ❖ Cambia la cabecera de cada columna de la consulta anterior traduciéndola al
 español.
