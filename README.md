@@ -58,19 +58,39 @@ comando utilizado:
 ALTER TABLE table_name RENAME COLUMN old_name TO new_name;
 debes reemplazar con los datos que necesitas en tu caso como en la foto
 
-
-
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/ee98b9e2-f086-48f1-ae4b-e7fd6d3712e8)
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/4cae22d9-dafd-4e9e-8275-c2cb905a2129)
 
 
 ❖ Usando la columna “IndepYear” (Año de independencia), Averigua el número
 de años que un país lleva independiente suponiendo que estamos ahora
 mismo en el 2024. Debes visualizar el nombre del país el año de
 independencia y el número de años transcurridos.
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/920f8c0a-1ace-436f-9f1a-e28fc0574e00)
+
+
+
 • Visualiza el nombre del país el año de independencia el número de
 años transcurridos.
 • Debes poner como nombre de columna “Añós Transcurridos”
 Nota: si el año de independencia es nulo la expresión también
 devolverá nulo.
+
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/342cb92d-57e0-44fe-9e4d-101bfed554e2)
+
+
 ❖ Visualiza los continentes sin que aparezcan repetidos.
+
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/f03ba57f-38c7-44ce-9e84-2525714bfae6)
+
+
+
 ❖ Visualizar los 5 primeros países.
+
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/f79583bf-2594-4ef5-bf35-acc6f612f792)
+
+
+
 ❖ Visualizar los países desde la posición 10 a la 15.
+
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/e4312021-a194-4d68-94a8-48c393932da3)
