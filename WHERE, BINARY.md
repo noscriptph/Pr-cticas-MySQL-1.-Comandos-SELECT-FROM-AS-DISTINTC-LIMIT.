@@ -3,9 +3,12 @@ Comandos WHERE, BINARY .
 ❖ Accedemos con mysql, mysql workbench o cualquier otra de las herramientas
 con la que estás trabajando.
 
-❖ Descarga y carga la base de datos SAKILA, que es oficial de MYSQL: AQUÍ
+❖ Descarga y carga la base de datos SAKILA, que es oficial de MYSQL
+
 • Instala primero sakila-schema.
+
 • Instala segundo sakila-data
+
 ver estos pasos en https://github.com/noscriptph/PracticasMySQLComandos/blob/ea0f623990970f5e1f2f7e01840d099304775654/SELECT-FROM-AS-DISTINTC-LIMIT.md
 
 ❖ Entra en la base de datos sakila”. Utiliza capturas de pantalla.
