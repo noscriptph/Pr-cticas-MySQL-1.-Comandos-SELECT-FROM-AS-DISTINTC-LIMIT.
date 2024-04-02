@@ -1,6 +1,7 @@
 # Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT.
 Actividad de clase donde se usan usan los comando de sql  SELECT, FROM,AS,DISTINTC,LIMIT.
 TIP, PARA LIMPIAR LA CONSOLA DE MYSQL DEBES USAR EL SIGUIENTE COMANDO
+
 ![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/4bc5dc52-bfef-46e4-a695-86e902dbd8aa)
 
 
@@ -10,6 +11,7 @@ con la que estás trabajando.
 
 
 ❖ Descarga y carga la base de datos World, que es oficial de MYSQL: AQUÍ
+
 ![imagen](https://github.com/noscriptph/Pr-cticas-MySQL-1.-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/6d831bdf-8b44-42bf-8487-d9566aee54f5)
 
 ![imagen](https://github.com/noscriptph/Pr-cticas-MySQL-1.-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/063136e8-1f56-4267-a210-2104bece9bb7)
@@ -22,6 +24,7 @@ con la que estás trabajando.
 ![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/e60f6bf2-37ee-4952-a091-e719a426440f)
 
 se lecciona la base de datos world y se pide que se muestren sus tablas
+
 ![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/c9eef60c-4260-4358-9559-b9dd8144fef4)
 
 
@@ -31,13 +34,22 @@ la tabla.
 ![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/4e395594-a54a-49be-a5ea-6d23f7af1574)
 
 
+
 seleccion de tabla para poder trabajar en ella
 
 ![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/a6904fee-cbc6-44d6-997d-ef61e26652ab)
 
+
 • Visualiza los nombres de los países.
 
+SELECT name FROM country;//para ver los datos en la columna name en la tabla country
+
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/da4357b1-64ef-4549-8f75-f28cc0a33b48)
+
+
 • Visualizar el nombre el continente y la población de cada país.
+
+
 ❖ Cambia la cabecera de cada columna de la consulta anterior traduciéndola al
 español.
 ❖ Usando la columna “IndepYear” (Año de independencia), Averigua el número
