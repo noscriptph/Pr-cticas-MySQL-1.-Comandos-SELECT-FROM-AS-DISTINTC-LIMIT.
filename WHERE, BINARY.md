@@ -53,10 +53,20 @@ aquellos clientes que esté inactivos (campo “active” igual a 0) .
 ❖ ¿Qué resultados daría el comando siguiente? ¿Los clientes activos o los
 inactivos :
 • select first_name,last_name,active from customer where active;
+(antes de debe seleccionar la base de datos como por defecto)
+
+![imagen](https://github.com/noscriptph/PracticasMySQLComandos/assets/103396791/6e4c2923-13ff-4503-86d1-0f3f9875a7bc)
+
+
 ❖ ¿Y el siguiente?¿Activos o inactivos?
 • select first_name,last_name,active from customer where !active;
 ❖ Si ejecutamos esta query contra la tabla “rental”:
 select * from rental where rental_date="2006-02-14";
+
+![imagen](https://github.com/noscriptph/PracticasMySQLComandos/assets/103396791/3a3b266c-295c-4a75-b418-6ed24442900a)
+
+se nego el true, por ende 
+
 Verás que no aparece ninguna fila, a pesar de que si existen registros en esa fecha.
 ¿A qué es debido? ¿Cómo podríamos visualizar alguno de los registros?
 ❖ PISTA. Si hacemos un desc de la tabla Rental comprobamos que la columna
