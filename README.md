@@ -49,9 +49,19 @@ SELECT name FROM country;//para ver los datos en la columna name en la tabla cou
 
 • Visualizar el nombre el continente y la población de cada país.
 
+![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/d22ee61e-3540-4106-8699-183898196548)
+
 
 ❖ Cambia la cabecera de cada columna de la consulta anterior traduciéndola al
 español.
+comando utilizado: 
+ALTER TABLE table_name RENAME COLUMN old_name TO new_name;
+debes reemplazar con los datos que necesitas en tu caso como en la foto
+
+
+
+
+
 ❖ Usando la columna “IndepYear” (Año de independencia), Averigua el número
 de años que un país lleva independiente suponiendo que estamos ahora
 mismo en el 2024. Debes visualizar el nombre del país el año de
