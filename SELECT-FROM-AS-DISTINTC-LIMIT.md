@@ -1,5 +1,6 @@
-# Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT.
+# Practicas MySQL Comandos: SELECT-FROM-AS-DISTINTC-LIMIT.
 Actividad de clase donde se usan usan los comando de sql  SELECT, FROM,AS,DISTINTC,LIMIT.
+
 TIP, PARA LIMPIAR LA CONSOLA DE MYSQL DEBES USAR EL SIGUIENTE COMANDO
 
 ![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/4bc5dc52-bfef-46e4-a695-86e902dbd8aa)
@@ -94,3 +95,6 @@ devolverá nulo.
 ❖ Visualizar los países desde la posición 10 a la 15.
 
 ![imagen](https://github.com/noscriptph/Practicas-MySQL-Comandos-SELECT-FROM-AS-DISTINTC-LIMIT./assets/103396791/e4312021-a194-4d68-94a8-48c393932da3)
+
+
+
