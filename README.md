@@ -33,7 +33,7 @@ comencemos la etapa de desarrollo.
 relaciones entre las entidades de una wallet y crear la base de datos para
 almacenar la información que sea necesaria.
 
-Para ver mas pueden
+Para ver mas pueden ingresar a siguiente [link ](https://github.com/noscriptph/PracticasMySQLComandosYWallet/tree/7e7d625c6c9abe4820d61a794f9095f027fa96f5/alkewallet2)
 
 
 ## BONUS!
