@@ -156,6 +156,7 @@ vamos a validar:
 
 ## Recursos🎁
 Tener en cuenta los tipos de relación:
+
 ![alt text](image.png)
 
 ## Entregables ✅

@@ -40,6 +40,8 @@ Para ver mas pueden ingresar a siguiente [link ](https://github.com/noscriptph/P
 
 ### DOCKER DESKTOP
 
+![alt text](image.png)
+
 En las clases de ayudantia se enseño respecto a los usos de docker y que 
 beneficios tiene en el momento de desarrollar para evitar problemas de 
 compatibilidad, siendo este ultimo punto el que me llamo la atencion y me motivo a aprender mas respecto a este tema.

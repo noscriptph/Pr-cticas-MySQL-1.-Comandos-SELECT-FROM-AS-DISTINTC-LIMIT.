@@ -1,0 +1,3 @@
+-- CREANDO BASE DE DATOS Wallet2
+CREATE DATABASE IF NOT EXISTS Alke_wallet;
+USE Alke_wallet;
