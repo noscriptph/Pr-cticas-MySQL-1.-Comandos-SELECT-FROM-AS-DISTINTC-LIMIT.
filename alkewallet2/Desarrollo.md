@@ -9,12 +9,18 @@ Empezamos descargando e instalando MySQL y MySQL Workbench
 > [!NOTE]
 > En este caso usare **Docker desktop** para realizar todos los comandos, mientras se ejecuta una imagen de MySQL en debian
 
+> [!TIP]
+> CADA VEZ QUE SE QUIERA ESCRIBIR UN COMENTARIO EN EL SCRIPT DE MySQL USAREMOS UN
+> DOBLE GUION Y UN ESPACIO ANTES DEL TEXTO A COMENTARIO
+> EJ:
+>       `-- comentario`
+
 Workbench sera utilizado para acceder a nuestra base de datos alojada en docker o en MySQL
 
 ![Docker desktop](image-3.png) ![MySQL Workbench 8.0 ce](image-4.png)
 
 > [!IMPORTANT]
-> Es importante indicar que en caso que utilices MySQL y docker ejecutando una imagen de MySQL sucedera un conflicto en el uso de puertos, se recomienda configurar uno de estos dos con otro puerto, en vez de usar 3306 podrias usar 3307
+> Es importante indicar que en caso que utilices MySQL y docker ejecutando una imagen de MySQL sucedera un conflicto en el uso de puertos, se recomienda configurar uno de estos dos con otro puerto. En vez de usar 3306 podrias usar 3307
 
 ## CREAR LA BASE DE DATOS Y LAS TABLAS
 
@@ -132,4 +138,61 @@ currency_symbol varchar(5)
 );
 ```
 ![creacion entidad Monedas](image-11.png)
+
+> [!TIP]
+> para ir ejecutando estos comando debes seleccionar el texto
+> y luego darle al boton con forma de rayo ![boton rayo](image-12.png)
+
+# POPULANDO LAS TABLAS
+
+> [!TIP]
+> Puedes usar la web mockaroo para popular la tabla Usuarios con valores aleatorios,
+>  en mi caso rellene asi la web 
+> 
+> ![configuracion mockaroo](image-13.png)
+> esta es la informacion que extraje
+>
+> ![usuarios generados](image-14.png)
+>
+> despues solo la pegue en Workbench y ejecute todo, previamente tener seleccionada la base de datos
+
+
+
+## ENTIDAD Usuarios
+
+![entidad usuarios populada](image-15.png)
+
+para ver la tabla solo debes ejecutar el comando:
+
+(ver desde linea 33 en `Wallet2.sql`)
+
+`SELECT * FROM Alke_wallet.Usuarios;`
+
+## ENTIDAD Transacciones
+
+Asi configure mockaroo para que genere 1000 Transacciones
+
+![config mockaroo para popular transacciones](image-17.png)
+
+luego tome todos los datos y popule la entidad
+
+![populando Transacciones](image-16.png)
+
+con el siguiente comando reviso si se aplicaron estos cambios
+
+`select * from transacciones;`
+
+si te da problemas seleccionar la entidad, debes usar este otro comando
+
+(ver linea 40 en `Wallet2.sql`)
+`SELECT * FROM Alke_wallet.Transacciones;`
+
+![revisar entidad transacciones](image-18.png)
+
+y ahora revisamos nuevamente a Usuarios para ver cuanto dinero tienen
+
+podemos volver a ejecutar el comando en la linea 38 selecionandolo y apretando el rayo
+
+![revisando a Usuarios](image-19.png)
+
 

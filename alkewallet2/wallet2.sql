@@ -29,5 +29,14 @@ currency_id int auto_increment primary key,
 currency_name varchar(50) NOT NULL,
 currency_symbol varchar(5) 
 );
+
+-- POPULANDO LAS TABLAS
+-- Leer explicacion en repositorio, en el archivo Desarrollo.md
+
+-- para confirmar si la entidad se populo con datos ejecuta la siguiente linea
+
+SELECT * FROM Alke_wallet.Usuarios;
     
-    
+SELECT * FROM Alke_wallet.Transacciones;   
+
+
