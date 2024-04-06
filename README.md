@@ -7,12 +7,12 @@ solicitados y las capturas de pantalla permite un facil entendimiento
 
 ## CONTENIDO
 - COMANDOS
-  - JOIN                                LINK
-  - SELECT FROM AS DISTINTC LIMIT       LINK
-  - WHERE BINARY                        LINK
+  - JOIN                                [LINK](https://github.com/noscriptph/PracticasMySQLComandosYWallet/blob/c9fb913b6bfc8008f6ed9d8696ed14278f0b0f85/JOIN%20UNIONES%20ENTRE%20TABLAS.md)
+  - SELECT FROM AS DISTINTC LIMIT       [LINK](https://github.com/noscriptph/PracticasMySQLComandosYWallet/blob/c9fb913b6bfc8008f6ed9d8696ed14278f0b0f85/SELECT-FROM-AS-DISTINTC-LIMIT.md)
+  - WHERE BINARY                        [LINK](https://github.com/noscriptph/PracticasMySQLComandosYWallet/blob/c9fb913b6bfc8008f6ed9d8696ed14278f0b0f85/WHERE%2C%20BINARY.md)
 
 ## PROYECTO DE MODULO
-- ALKEWALLET 2                          LINK
+- ALKEWALLET 2                          [LINK](https://github.com/noscriptph/PracticasMySQLComandosYWallet/blob/c9fb913b6bfc8008f6ed9d8696ed14278f0b0f85/alkewallet2/REAME.md)
 
 
 ## BONUS!
