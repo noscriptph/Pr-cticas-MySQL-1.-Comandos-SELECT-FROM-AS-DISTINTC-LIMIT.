@@ -18,7 +18,7 @@ solicitados y las capturas de pantalla permite un facil entendimiento
 
 ## PROYECTO DE MODULO
 
-- ALKEWALLET 2 [LINK](https://github.com/noscriptph/PracticasMySQLComandosYWallet/blob/c9fb913b6bfc8008f6ed9d8696ed14278f0b0f85/alkewallet2/REAME.md)
+- ALKEWALLET 2 [LINK](alkewallet2/REAME.md)
 
 Segun la descripcion en el archivo entregado en el curso
 

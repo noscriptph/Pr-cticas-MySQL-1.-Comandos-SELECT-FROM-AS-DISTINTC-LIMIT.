@@ -225,10 +225,18 @@ Crear consultas SQL para:
 
 puedes acceder al desarrollo de estos ejercicios por este [link](CrearConsultas.md)
 
-[volver](REAME.md)
+> [!IMPORTANT]
+> En la siguiente etapa se hiceron cambios sutiles y se reescribio la populacion de las tablas al detectar necesidades nuevas que la actual base de datos no satisfacia, a continuacion el link del archivo wallet2 y una imagen de como quedo el diagrama
+
+![Diagrama er](image-23.png)
+
+[Alkewallet2 sql](wallet2.sql)
+
+
+[Volver](REAME.md)
 
 # <!-- markdownlint-disable-line -->
 
 <div align='right'><!-- markdownlint-disable-line -->
-*built with 🍺 by noscriptph*
+built with 🍺 by noscriptph
 </div>

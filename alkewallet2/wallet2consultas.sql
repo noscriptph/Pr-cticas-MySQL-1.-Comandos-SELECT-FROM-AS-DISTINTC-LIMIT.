@@ -1,53 +1,52 @@
--- CREANDO BASE DE DATOS Wallet2
-CREATE DATABASE IF NOT EXISTS Alke_wallet;
 USE Alke_wallet;
 
+-- consultare por el usuario con id 3
+SELECT u.nombre AS nombre_usuario, m.currency_name AS nombre_moneda
+FROM Usuarios u
+JOIN Monedas m ON u.moneda_id = m.currency_id
+WHERE u.user_id = 3;
+-- la respuesta fue pedro ramirez y yen japones
 
--- CREANDO TABLAS SOLICITADAS
-CREATE TABLE IF NOT EXISTS Usuarios(
-	user_id int auto_increment primary key,
-	nombre varchar(100)NOT NULL,
-	correo_electronico varchar(100) NOT NULL,
-    contrasenia varchar(100) NOT NULL,
-	foreign key(fk_selected_curreny) references Monedas(currency_id),
-    foreign key(fk_selected_curreny_name) references Monedas(currency_name),
-    saldo decimal(10,2)NOT NULL,
-    -- indica que la fecha es actual al momento de realizarse de forma predeterminada
-    fecha_creacion timestamp default current_timestamp
-);
-    
-CREATE TABLE IF NOT EXISTS Transacciones(
-	transaccion_id int auto_increment primary key,
-    sender_user_id int,
-    receiver_user_id int,
-    valor decimal(10,2)NOT NULL,
-    transation_date timestamp default current_timestamp,
-    foreign key(fk_sender_user_id) references Usuarios(user_id),
-    foreign key(fk_receiver_user_id) references Usuarios(user_id)
-);
-    
-CREATE TABLE IF NOT EXISTS Monedas(
-	pk_currency_id int auto_increment primary key,
-	currency_name varchar(50) NOT NULL,
-	currency_symbol varchar(5) 
-);
+-- Consulta para obtener las transacciones realizadas por un usuario específico
+SELECT * FROM Transacciones WHERE sender_user_id = 3;
 
--- POPULANDO LAS TABLAS
--- Leer explicacion en repositorio, en el archivo Desarrollo.md
+-- Consulta para obtener todos los usuarios registrados sin repetir sus nombres en el resultado
+SELECT DISTINCT nombre FROM Usuarios;
 
--- para confirmar si la entidad se populo con datos ejecuta la siguiente linea
+-- Consulta para obtener todas las monedas registradas
+SELECT DISTINCT currency_name FROM Monedas;
 
-SELECT * FROM Alke_wallet.Usuarios;
-    
-SELECT * FROM Alke_wallet.Transacciones;   
+-- Consulta para obtener todas las transacciones registradas
+SELECT * FROM Transacciones;
 
--- Popular entidad Monedas
-INSERT INTO Monedas (currency_name, currency_symbol)
-VALUES
-	("Dolar","$"),
-    ("Euro", "Є"),
-    ("Libra Esterlina", "£"),
-    ("Peso Chileno","$"),
-    ("Dolar Canadiense","Є");
+-- Consulta para obtener las transacciones realizadas hacia un usuario específico
+SELECT * FROM Transacciones WHERE receiver_user_id = 3;
 
-select * from monedas; 
+-- Sentencia DML para modificar el campo correo electrónico de un usuario específico
+UPDATE Usuarios
+SET correo_electronico = 'nuevo_correo@nuevo.com'
+WHERE user_id = 3;
+
+-- Sentencia para eliminar los datos de una transacción (eliminado de la fila completa)
+DELETE FROM Transacciones WHERE transaccion_id = 3;
+
+-- Sentencia para DDL modificar el nombre de la columna correo_electronico por email
+ALTER TABLE Usuarios CHANGE COLUMN correo_electronico email varchar(100) NOT NULL;
+
+SELECT * FROM Transacciones WHERE sender_user_id != receiver_user_id;
+
+DELIMITER //
+
+CREATE TRIGGER evitar_transferencia_propia
+BEFORE INSERT ON Transacciones
+FOR EACH ROW
+BEGIN
+    IF NEW.sender_user_id = NEW.receiver_user_id THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'No se puede transferir dinero a uno mismo';
+    END IF;
+END //
+
+DELIMITER ;
+
+ALTER TABLE Transacciones
+DROP FOREIGN KEY fk_transacciones_moneda;
