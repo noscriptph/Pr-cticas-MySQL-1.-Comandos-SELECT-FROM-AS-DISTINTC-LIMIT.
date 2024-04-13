@@ -170,3 +170,6 @@ Tener en cuenta los tipos de relación:
 ## Desarrolo 
 
 Puede acceder con el siguiente [link](Desarrollo.md)
+
+los archivos SQL se encuentran en este mismo directorio 
+![alt text](image-37.png)
