@@ -194,3 +194,5 @@ FROM ASIGNATURAS A RIGHT JOIN PROFESORES P ON A.cod_profesor = P.cod_profesor;
 
 >[!NOTE]
 >EL script final con todas las consultas revisadas y funcionando esta en este [link](consultas.sql)
+
+[VOLVER](https://github.com/noscriptph/PracticasMySQLComandosYWallet)
