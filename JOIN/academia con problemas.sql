@@ -1,4 +1,4 @@
-create database ACADEMIA;
+create database academia;
 USE ACADEMIA;
 create table CURSOS (
 	cod_curso INT PRIMARY KEY,
@@ -76,7 +76,7 @@ insert into PROFESORES (cod_profesor, nombre, apellidos, email, edad) values (49
 insert into PROFESORES (cod_profesor, nombre, apellidos, email, edad) values (50, 'Andria', 'Leimster', 'aleimster1d@vkontakte.ru', 32);
 
 
-use ACADEMIA;
+use academia;
 create table ALUMNOS (
 	cod_alumno INT PRIMARY KEY,
 	nombre VARCHAR(50),
@@ -194,8 +194,8 @@ create table ASIGNATURAS (
 	cod_curso INT,
 	cod_profesor INT,
 	duracion INT,
-    constraint fk_curso_as foreign key(cod_curso) references CURSOS(cod_curso),
-    constraint fk_profesor_as foreign key(cod_profesor) references PROFESORES(cod_profesor)
+    constraint fk_curso_as foreign key(cod_curso) references cursos(cod_curso),
+    constraint fk_profesor_as foreign key(cod_profesor) references profesores(cod_profesor)
     
 );
 insert into ASIGNATURAS (cod_asignatura, nombre, cod_curso, cod_profesor, duracion) values (1, 'laboratorio', 10, 17, 21);
@@ -258,9 +258,9 @@ create table NOTAS_ALUMNOS (
 	cod_asignatura INT,
 	nota INT,
     PRIMARY KEY (COD_ALUMNO,COD_CURSO,COD_ASIGNATURA),
-    constraint fk1 foreign key(cod_alumno) references ALUMNOS(cod_alumno),
-    constraint fk2 foreign key(cod_curso) references CURSOS(cod_curso),
-    constraint fk3 foreign key(cod_asignatura) references ASIGNATURAS(cod_asignatura)
+    constraint fk1 foreign key(cod_alumno) references alumnos(cod_alumno),
+    constraint fk2 foreign key(cod_curso) references cursos(cod_curso),
+    constraint fk3 foreign key(cod_asignatura) references asignaturas(cod_asignatura)
 );
 
 INSERT INTO NOTAS_ALUMNOS (`cod_alumno`,`cod_curso`,`cod_asignatura`,`nota`) VALUES (1,1,3,9);
