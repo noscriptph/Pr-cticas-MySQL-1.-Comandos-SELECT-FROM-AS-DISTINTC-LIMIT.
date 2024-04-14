@@ -15,6 +15,7 @@ solicitados y las capturas de pantalla permite un facil entendimiento
   - JOIN [LINK](https://github.com/noscriptph/PracticasMySQLComandosYWallet/blob/c9fb913b6bfc8008f6ed9d8696ed14278f0b0f85/JOIN%20UNIONES%20ENTRE%20TABLAS.md)
   - SELECT FROM AS DISTINTC LIMIT [LINK](https://github.com/noscriptph/PracticasMySQLComandosYWallet/blob/c9fb913b6bfc8008f6ed9d8696ed14278f0b0f85/SELECT-FROM-AS-DISTINTC-LIMIT.md)
   - WHERE BINARY [LINK](https://github.com/noscriptph/PracticasMySQLComandosYWallet/blob/c9fb913b6bfc8008f6ed9d8696ed14278f0b0f85/WHERE%2C%20BINARY.md)
+  - ACADEMIA [LINK](Academia/ACADEMIA.md)
   - DISEÑANDO UNA BASE DE DATOS PARA UNA APLICACION DE GESTION DE BIBLIOTECAS [LINK](BASE%20DE%20DATOS%20BIBLIOTECA/BIBLIOTECA%20MYSQL.md)
   
 ## PROYECTO DE MODULO
