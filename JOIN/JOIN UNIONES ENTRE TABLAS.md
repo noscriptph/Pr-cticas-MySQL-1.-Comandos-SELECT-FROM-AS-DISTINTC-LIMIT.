@@ -152,7 +152,7 @@ no tienen alumnos
     insert into cursos values(12,'curso12',200);
 
 asi usare el script
-```
+```MySQL
 insert into CURSOS values(11,'curso11',100);  
 insert into CURSOS values(12,'curso12',200);
 ```
@@ -161,7 +161,7 @@ insert into CURSOS values(12,'curso12',200);
 ❖ Averiguar ahora el número de alumnos por curso. Debes usar la cláusula
 USING para hacer la join ( Investiga sobre la clausaula USING y aplícala).
 
-```
+```MySQL
 SELECT C.nombre AS nombre_curso, COUNT(A.cod_alumno) AS numero_alumnos
 FROM CURSOS C
 JOIN ALUMNOS A USING (cod_curso)
@@ -173,7 +173,7 @@ GROUP BY C.nombre;
 ❖ Comprueba si aparecen los nuevos cursos. Hazlo con Left Join y deben
 aparecer 0 alumnos.
 
-```
+```MySQL
 SELECT C.cod_curso, C.nombre AS nombre_curso, COUNT(A.cod_alumno) AS numero_alumnos
 FROM CURSOS C LEFT JOIN ALUMNOS A ON C.cod_curso = A.cod_curso GROUP BY C.cod_curso, C.nombre
 HAVING COUNT(A.cod_alumno) = 0;
@@ -186,7 +186,7 @@ HAVING COUNT(A.cod_alumno) = 0;
 aparecen ya que no tienen asignaturas todavía. Los debes incluir con un
 RIGHT JOIN.
 
-```
+```MySQL
 SELECT A.nombre AS nombre_asignatura, P.nombre AS nombre_profesor
 FROM ASIGNATURAS A RIGHT JOIN PROFESORES P ON A.cod_profesor = P.cod_profesor;
 ```
